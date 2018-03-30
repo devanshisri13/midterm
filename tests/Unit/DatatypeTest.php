@@ -21,5 +21,12 @@ class DatatypeTest extends TestCase
         $car_year = (int)$car->year;
         $this->assertInternalType('integer', $car_year);
     }
+    public function testCheckCarMake()
+    {
+        $car=car::find(18);
+        $car_make=$car->Make;
+        $this->assertContains($car_make,['ford','honda','toyota']);
+    }
+
 
 }
