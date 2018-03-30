@@ -27,4 +27,11 @@ class RegisterTest extends TestCase
         $response->assertStatus(200);
 
     }
+    public function testAboutFeature()
+    {
+        $response = $this->get('/about');
+
+        $response->assertStatus(200);
+
+    }
 }
