@@ -27,7 +27,7 @@ class DeleteTest extends TestCase
     }
         public function testDeleteCarUnit()
     {
-        $car = new car();
+        $car = new Car();
         $car->Make = 'honda';
         $car->Model = 'b';
         $car->year = '1969';
